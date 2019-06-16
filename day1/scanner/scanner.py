@@ -1,7 +1,6 @@
 import click
 from functions import *
 
-
 def pscan(host, ports):
     """This function scans a port against a host
     
@@ -9,12 +8,15 @@ def pscan(host, ports):
         host -- 'Host IP'\n
         port -- 'Port Number'
     """
-    for port in ports.split(','):
-        try:
-            print(f'Scan results for {host}:')
-            portScanner(host, int(port))
-        except:
-            on_error()
+    try:
+        print(f'Scan results for {host}:')
+        for port in ports.split(','):
+            try:
+                portScanner(host, int(port))
+            except:
+                on_error()
+    except:
+        on_error()
 
 def rscan(host, startp, endp):
     """This scans a range of ports against the host
@@ -25,7 +27,6 @@ def rscan(host, startp, endp):
         endp -- 'End Port'
     """
     try:
-        #print(f'Scan results for {host}:')
         rangePortScanner(host, int(startp), int(endp))
     except:
         on_error()

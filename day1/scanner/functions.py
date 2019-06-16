@@ -13,8 +13,6 @@ def on_error():
 def portScanner(host, port):
     try:
         sock = socket(AF_INET, SOCK_STREAM)
-        #settimeout(3)
-        #setdefaulttimeout(1)
         sock.connect((host, port))
         print(colored(f'[+] port {port}/tcp is open', 'green'))
     except:
@@ -23,6 +21,7 @@ def portScanner(host, port):
         sock.close()
 
 def rangePortScanner(host, startp, endp):
+    print(f'Scan results for {host}:')
     for port in range(startp, endp + 1):
         t = Thread(target=portScanner, args=(host, int(port)))
         t.start()
