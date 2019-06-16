@@ -5,7 +5,7 @@ from threading import *
 actions = ['pscan', 'rscan']
 
 def no_action_picked():
-    print("Please select an action: {}" .format(actions))
+    print(f"Please select an action: {actions}")
 
 def on_error():
     print("Enter host and port, run --help for command list")
@@ -25,6 +25,3 @@ def range_pscanner(host, startp, endp):
     for port in range(startp, endp + 1):
         t = Thread(target=port_scanner, args=(host, int(port)))
         t.start()
-
-def no_action_picked():
-    print("Please select an action: {}" .format(actions))
