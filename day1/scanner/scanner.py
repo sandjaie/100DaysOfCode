@@ -12,7 +12,7 @@ def pscan(host, ports):
         print(f'Scan results for {host}:')
         for port in ports.split(','):
             try:
-                portScanner(host, int(port))
+                port_scanner(host, int(port))
             except:
                 on_error()
     except:
@@ -27,7 +27,7 @@ def rscan(host, startp, endp):
         endp -- 'End Port'
     """
     try:
-        rangePortScanner(host, int(startp), int(endp))
+        range_pscanner(host, int(startp), int(endp))
     except:
         on_error()
 
