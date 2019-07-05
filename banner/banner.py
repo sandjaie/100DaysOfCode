@@ -1,18 +1,17 @@
 #!/usr/bin/env python3
-# Find SSH version on the remote host
 
 from socket import *
 from threading import *
 
 def retBanner(ip, port):
-    """Returns Open SSH banner of the remote host
+    """Returns available banner of the remote host by scanning the ports
     
     Arguments:
         ip [str] -- [IP of the remote host]
         port [int] -- [Port of the remote host]
     
     Returns:
-        banner [str] -- [SSH version]
+        banner [str] 
     """
     try:
         sock = socket(AF_INET, SOCK_STREAM)
