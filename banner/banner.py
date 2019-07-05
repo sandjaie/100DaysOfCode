@@ -21,7 +21,7 @@ def retBanner(ip, port):
         banner = sock.recv(1024).decode()
         sock.close()
         if banner:
-            print(f"[+] {ip}:{banner}")
+            print(f"[+] {ip}:{port}\t{banner}")
     except Exception as err:
         return err
     
