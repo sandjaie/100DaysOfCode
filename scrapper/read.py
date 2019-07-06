@@ -41,7 +41,7 @@ def find_max_priced_product():
     """Returns max priced product name and price
     
     Returns:
-        [type] -- [description]
+        product [list] -- [returns high priced product as a list]
     """
     max_price = find_max_price()
     with open('products.csv', 'r') as f:
