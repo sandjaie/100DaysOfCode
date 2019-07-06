@@ -11,12 +11,10 @@ soup = BeautifulSoup(page.content, 'html.parser')
 
 prices_text = [ f'"{price.get_text()}"' for price in soup.find_all('span', {'class': 'a-price-whole'}) ]
 titles_text = [ f'"{title.get_text()}"' for title in soup.find_all('span', {'class': 'a-size-medium a-color-base a-text-normal'}) ]
-
 serial_numbers = [ str(serial_number) for serial_number  in range(1, len(prices_text))]
 zipped_items = zip(serial_numbers, prices_text, titles_text)
 
 csv_headers = ['Serial Number', 'Price', 'Product']
-
 
 with open('products.csv', 'w') as f:
     f.write(','.join(csv_headers) + '\n')
