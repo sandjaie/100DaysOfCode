@@ -1,9 +1,14 @@
 import requests
 from bs4 import BeautifulSoup
 from config import *
+from read import *
 
-page = requests.get(url, headers=headers)
+def get_key_word():
+    key_word = input("Enter the key word to search: ")
+    return key_word
 
+url_cons = "https://www.amazon.in/s?k={}&ref=nb_sb_noss".format(get_key_word())
+page = requests.get(url_cons, headers=headers)
 soup = BeautifulSoup(page.content, 'html.parser')
 
 def zip_items():
@@ -38,3 +43,4 @@ def write_file():
     
 if __name__ == "__main__":
     write_file()
+    print_max_priced_product()

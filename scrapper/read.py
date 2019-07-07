@@ -49,7 +49,10 @@ def find_max_priced_product():
         product = sorted(f[1:], key=lambda item: int(item[1].replace(',','')), reverse=True)
     return product[0]
 
-if __name__ == "__main__":
+def print_max_priced_product():
     print("Max Price from the list:", find_max_price())
     print(f"Price: {find_max_priced_product()[1]}")
     print(f"Product: {find_max_priced_product()[2]}")
+
+if __name__ == "__main__":
+    print_max_priced_product()
