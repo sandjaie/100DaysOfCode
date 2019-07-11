@@ -10,5 +10,7 @@ What it scraps:
 * Finds the highest priced product and price
 
 Need to improve:
+* Feat: <br>
+    [ ] Build a rest api with the data gathered.
 * Issues: <br>
     [ ] Do not add products if the price is missing or the tag is missing.
