@@ -32,11 +32,6 @@ def find_max_price():
     max_price = price_list[-1]
     return max_price
 
-# def key(item):
-#     # ['6', '57,999', 'OnePlus 7 Pro (Nebula Blue, 12GB RAM, 256GB Storage)']
-#     price = item[1].replace(',','')
-#     return int(price)
-
 def find_max_priced_product():
     """Returns max priced product name and price
     
