@@ -3,6 +3,8 @@
 How to run: <br>
 `python scrapper.py`
 
+products.csv and products.json are created at runtime. <br>
+
 What it scraps:
 * url: amazon.in product search page<br>
 * product: key_word<br>
