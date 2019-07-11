@@ -1,21 +1,107 @@
-{"Serial Number": "Serial Number", "Price": "Price", "Product": "Product"},
-{"Serial Number": "1", "Price": "32,999", "Product": "OnePlus 7 (Mirror Grey, 6GB RAM, 128GB Storage)"},
-{"Serial Number": "2", "Price": "27,999", "Product": "OnePlus 6T (Mirror Black, 8GB RAM, 128GB Storage)"},
-{"Serial Number": "3", "Price": "41,999", "Product": "OnePlus 6T (Midnight Black, 8GB RAM, 128GB Storage)"},
-{"Serial Number": "4", "Price": "52,999", "Product": "OnePlus 7 Pro (Almond, 8GB RAM, 256GB Storage)"},
-{"Serial Number": "5", "Price": "37,999", "Product": "OnePlus 7 (Mirror Grey, 8GB RAM, 256GB Storage)"},
-{"Serial Number": "6", "Price": "37,999", "Product": "OnePlus 7 (Red, 8GB RAM, 256GB Storage)"},
-{"Serial Number": "7", "Price": "41,999", "Product": "OnePlus 6T McLaren Limited Edition (Speed Orange, 10GB RAM,256GB Storage)"},
-{"Serial Number": "8", "Price": "50,999", "Product": "(Renewed) OnePlus 6T (Mirror Black, 6GB RAM, 128GB Storage)"},
-{"Serial Number": "9", "Price": "24,999", "Product": "Vivo V15 (Aqua Blue, 6GB RAM, 64GB Storage) with No Cost EMI/Additional Exchange Offers"},
-{"Serial Number": "10", "Price": "37,999", "Product": "OPPO A5S (Gold, 4GB RAM, 64GB Storage) with No Cost EMI/Additional Exchange Offers"},
-{"Serial Number": "11", "Price": "19,990", "Product": "(Renewed) OnePlus 5T (Midnight Black, 64GB)"},
-{"Serial Number": "12", "Price": "26,990", "Product": "(Renewed) OnePlus 6 (Mirror Black, 6GB RAM, 64GB Storage)"},
-{"Serial Number": "13", "Price": "12,990", "Product": "OnePlus 7 Pro (Nebula Blue, 8GB RAM, 256GB Storage)"},
-{"Serial Number": "14", "Price": "15,990", "Product": "OnePlus 7 Pro (Mirror Grey, 6GB RAM, 128GB Storage)"},
-{"Serial Number": "15", "Price": "23,988", "Product": "OnePlus 7 Pro (Nebula Blue, 12GB RAM, 256GB Storage)"},
-{"Serial Number": "16", "Price": "37,990", "Product": "OnePlus 7 Pro (Mirror Grey, 8GB RAM, 256GB Storage)"},
-{"Serial Number": "17", "Price": "52,999", "Product": "(Renewed) OnePlus X (Black, 16GB)"},
-{"Serial Number": "18", "Price": "48,999", "Product": "OnePlus 7 Pro Nylon Bumper Case (Nylon)"},
-{"Serial Number": "19", "Price": "57,999", "Product": "Anti-Lost Touch Screen Bluetooth M3 Smart Watch with Camera SIM Card Slot and Pedometer Smart Health, Sleep Monitoring, Better Display, Loud Speaker, Microphone (Multicolor)"},
-{"Serial Number": "20", "Price": "52,999", "Product": "Vivo V15 Pro (Topaz Blue, 8GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers"},
+[
+    {
+        "Serial Number": "1",
+        "Price": "32,999",
+        "Product": "OnePlus 7 (Mirror Grey, 6GB RAM, 128GB Storage)"
+    },
+    {
+        "Serial Number": "2",
+        "Price": "52,999",
+        "Product": "OnePlus 7 Pro (Almond, 8GB RAM, 256GB Storage)"
+    },
+    {
+        "Serial Number": "3",
+        "Price": "31,999",
+        "Product": "OnePlus 6T (Midnight Black, 8GB RAM, 256GB Storage)"
+    },
+    {
+        "Serial Number": "4",
+        "Price": "45,999",
+        "Product": "OnePlus 7 (Red, 8GB RAM, 256GB Storage)"
+    },
+    {
+        "Serial Number": "5",
+        "Price": "37,999",
+        "Product": "OnePlus 7 (Mirror Grey, 8GB RAM, 256GB Storage)"
+    },
+    {
+        "Serial Number": "6",
+        "Price": "37,999",
+        "Product": "OnePlus 6T McLaren Limited Edition (Speed Orange, 10GB RAM,256GB Storage)"
+    },
+    {
+        "Serial Number": "7",
+        "Price": "41,999",
+        "Product": "OnePlus 7 Pro (Nebula Blue, 12GB RAM, 256GB Storage)"
+    },
+    {
+        "Serial Number": "8",
+        "Price": "50,999",
+        "Product": "(Renewed) OnePlus 6T (Mirror Black, 6GB RAM, 128GB Storage)"
+    },
+    {
+        "Serial Number": "9",
+        "Price": "57,999",
+        "Product": "Samsung Galaxy M40 (Seawater Blue, 6GB RAM, 128GB Storage)"
+    },
+    {
+        "Serial Number": "10",
+        "Price": "24,999",
+        "Product": "Samsung Galaxy M30 (Gradation Black, 4+64 GB)"
+    },
+    {
+        "Serial Number": "11",
+        "Price": "37,999",
+        "Product": "OnePlus 3 (Soft Gold, 64 GB)"
+    },
+    {
+        "Serial Number": "12",
+        "Price": "19,990",
+        "Product": "(Renewed) OnePlus 6 (Mirror Black, 6GB RAM, 64GB Storage)"
+    },
+    {
+        "Serial Number": "13",
+        "Price": "20,490",
+        "Product": "(Renewed) OnePlus 5 (Slate Grey, 6GB RAM, 64GB Storage)"
+    },
+    {
+        "Serial Number": "14",
+        "Price": "14,990",
+        "Product": "(Renewed) OnePlus 6T (Midnight Black, 8GB RAM, 128GB Storage)"
+    },
+    {
+        "Serial Number": "15",
+        "Price": "16,490",
+        "Product": "(Renewed) OnePlus 6T (Mirror Black, 8GB RAM, 128GB Storage)"
+    },
+    {
+        "Serial Number": "16",
+        "Price": "27,999",
+        "Product": "OnePlus 7 Pro (Nebula Blue, 8GB RAM, 256GB Storage)"
+    },
+    {
+        "Serial Number": "17",
+        "Price": "23,878",
+        "Product": "OnePlus 7 Pro (Mirror Grey, 6GB RAM, 128GB Storage)"
+    },
+    {
+        "Serial Number": "18",
+        "Price": "34,999",
+        "Product": "OnePlus 7 Pro (Mirror Grey, 8GB RAM, 256GB Storage)"
+    },
+    {
+        "Serial Number": "19",
+        "Price": "22,999",
+        "Product": "Samsung Galaxy M10 (Ocean Blue, 2+16GB)"
+    },
+    {
+        "Serial Number": "20",
+        "Price": "28,999",
+        "Product": "Samsung Galaxy M20 (Ocean Blue, 4+64GB)"
+    },
+    {
+        "Serial Number": "21",
+        "Price": "26,999",
+        "Product": "Samsung Galaxy M40 (Seawater Blue, 6GB RAM, 128GB Storage)"
+    }
+]
