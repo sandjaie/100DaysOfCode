@@ -15,7 +15,7 @@ def read_json_data():
     """
     return json.load(open('products.json'))
 
-def max_read_json_data():
+def find_max_priced_product():
     """Sort the json file and return the max priced product
     
     Returns:
@@ -50,7 +50,8 @@ def find_max_price():
     max_price = price_list[-1]
     return max_price
 
-def find_max_priced_product():
+#Not used anywhere
+def find_max_priced_product_csv():
     """Returns max priced product name and price
     
     Returns:
@@ -58,8 +59,8 @@ def find_max_priced_product():
     """
     with open('products.csv', 'r') as f:
         f = list(csv.reader(f, delimiter=','))
-        product = sorted(f[1:], key=lambda item: int(item[1].replace(',','')), reverse=True)
-    return product[0]
+        products = sorted(f[1:], key=lambda item: int(item[1].replace(',','')), reverse=True)
+    return products[0]
 
 #Not used anywhere
 def print_max_priced_product():
