@@ -12,5 +12,6 @@ What it scraps:
 Need to improve:
 * Feat: <br>
     [ ] Build a rest api with the data gathered.
+    [ ] Build the app as a web app with Flask
 * Issues: <br>
     [ ] Do not add products if the price is missing or the tag is missing.
