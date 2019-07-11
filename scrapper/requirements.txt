@@ -1,2 +1,6 @@
 requests
 beautifulsoup4
+flask
+flask-jsonpify
+flask-sqlalchemy
+flask-restful
