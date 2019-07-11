@@ -10,22 +10,26 @@ def read_text():
         for l in line:
             print(l, end='\n')
 
-def json_data():
-    """Converts the csv to json format and writes the data to products.json
+def read_json_data():
+    """Returns the json file
     """
-    csv_file = open('products.csv', 'r')
-    json_file = open('products.json', 'w')
-    fieldnames = ("Serial Number","Price","Product")
-    reader = csv.DictReader(csv_file, fieldnames)
-    for row in reader:
-        json.dump(row, json_file)
-        json_file.write(',\n')
+    return json.load(open('products.json'))
+
+def max_read_json_data():
+    """Sort the json file and return the max priced product
+    
+    Returns:
+        product [list] -- [max priced product]
+    """
+    data = read_json_data()
+    products = sorted(data, key=lambda product: int(product['Price'].replace(',','')), reverse=True)
+    return products[0]
 
 def get_price():
     """Get the price of all the products
     
     Returns:
-        Price_list [list] -- [price_list]
+        price_list [list] -- [price_list]
     """
     with open('products.csv', 'r') as f:
         f = csv.reader(f, delimiter=',')
@@ -57,10 +61,9 @@ def find_max_priced_product():
         product = sorted(f[1:], key=lambda item: int(item[1].replace(',','')), reverse=True)
     return product[0]
 
+#Not used anywhere
 def print_max_priced_product():
     print("Max Price from the list:", find_max_price())
     print(f"Price: {find_max_priced_product()[1]}")
     print(f"Product: {find_max_priced_product()[2]}")
 
-if __name__ == "__main__":
-    print_max_priced_product()
