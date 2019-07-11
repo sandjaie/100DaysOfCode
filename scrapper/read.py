@@ -1,4 +1,5 @@
 import csv
+import json
 
 #Read the file, not used anywhere.
 def read_text():
@@ -8,7 +9,18 @@ def read_text():
         line = r.readlines()
         for l in line:
             print(l, end='\n')
-    
+
+def json_data():
+    """Converts the csv to json format and writes the data to products.json
+    """
+    csv_file = open('products.csv', 'r')
+    json_file = open('products.json', 'w')
+    fieldnames = ("Serial Number","Price","Product")
+    reader = csv.DictReader(csv_file, fieldnames)
+    for row in reader:
+        json.dump(row, json_file)
+        json_file.write(',\n')
+
 def get_price():
     """Get the price of all the products
     
@@ -26,6 +38,8 @@ def get_price():
 
 def find_max_price():
     """Find the max price from the price list
+    Returns:
+        max price
     """
     price_list = get_price()
     price_list.sort()
@@ -38,7 +52,6 @@ def find_max_priced_product():
     Returns:
         product [list] -- [returns high priced product as a list]
     """
-    max_price = find_max_price()
     with open('products.csv', 'r') as f:
         f = list(csv.reader(f, delimiter=','))
         product = sorted(f[1:], key=lambda item: int(item[1].replace(',','')), reverse=True)
