@@ -12,8 +12,12 @@ What it scraps:
 * Finds the highest priced product and price
 
 Need to improve:
+* Add: <br>
+    [ ] Update readme with api endpoints
+    [ ] Add helper functions
 * Feat: <br>
-    [ ] Build a rest api with the data gathered.
+    [x] Build a rest api with the data gathered.
     [ ] Build the app as a web app with Flask
+    [ ] Add logger
 * Issues: <br>
     [ ] Do not add products if the price is missing or the tag is missing.
