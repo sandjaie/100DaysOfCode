@@ -15,6 +15,7 @@ Need to improve:
 * Add: <br>
     [ ] Update readme with api endpoints
     [ ] Add helper functions
+    [ ] Add test cases, code formating - pytest, pylint
 * Feat: <br>
     [x] Build a rest api with the data gathered.
     [ ] Build the app as a web app with Flask
