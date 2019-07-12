@@ -12,6 +12,8 @@ What it scraps:
 * Finds the highest priced product and price
 
 Need to improve:
+* story: <br>
+    [ ] Write a story, how it started and day by day improvements.
 * Add: <br>
     [ ] Update readme with api endpoints
     [ ] Add helper functions
